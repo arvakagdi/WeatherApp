@@ -13,7 +13,7 @@ app.get("/", function(req, res){ // when user tries to go to homepage -->'get'
 
 app.post("/", function(req,res){
     const location = req.body.cityName;
-    const apiKey = "1e4714ea0ef44c28fdc929b354e28d74"
+    const apiKey = "your api key"  // use your api key
     const unit = "metric"
     const url = "https://api.openweathermap.org/data/2.5/weather?q="+ location +"&appid="+ apiKey+"&units=" + unit;   // remember to include https://
     https.get(url, function(response){ // get is used to request data using url using https from other server
